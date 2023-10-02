@@ -1,5 +1,11 @@
 # 💻 My .files
 
+THINGS TO UPDATE:
+- Export your own iTerm config
+- Find a way to add the hot corner and keyboard changes you've made
+- You're currently also taking your vim/nvim config from https://daler.github.io/dotfiles/starthere.html (although it's not a great setup experience tbh)
+
+
 ![iTerm screenshot](misc/screenshot.png)
 
 Just a personal backup of my MacBook's setup. Certainly not a drop-in solution for anybody's machine except my own, but maybe a few lines will prove useful to you.
