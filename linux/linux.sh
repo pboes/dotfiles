@@ -26,7 +26,7 @@ if [[ -e /etc/debian_version ]]; then
 fi
 
 # set machine's timezone to local time
-sudo timedatectl set-timezone America/New_York
+sudo timedatectl set-timezone Europe/Berlin
 
 # install linuxbrew:
 # https://docs.brew.sh/Homebrew-on-Linux#install
@@ -38,23 +38,23 @@ if ! command -v brew &>/dev/null; then
   sudo rm /.dockerenv
 fi
 
-# install tailscale
-if ! command -v tailscale &>/dev/null; then
-  curl -fsSL https://tailscale.com/install.sh | bash
-fi
+# # install tailscale
+# if ! command -v tailscale &>/dev/null; then
+#   curl -fsSL https://tailscale.com/install.sh | bash
+# fi
 
-# install volta
-if ! command -v volta &>/dev/null; then
-  export VOLTA_HOME="$HOME/.volta"
-  export PATH="$VOLTA_HOME/bin:$PATH"
-  curl -fsSL https://get.volta.sh | bash -s -- --skip-setup
-fi
-volta install node@lts npm@latest yarn@latest
+# # install volta
+# if ! command -v volta &>/dev/null; then
+#   export VOLTA_HOME="$HOME/.volta"
+#   export PATH="$VOLTA_HOME/bin:$PATH"
+#   curl -fsSL https://get.volta.sh | bash -s -- --skip-setup
+# fi
+# volta install node@lts npm@latest yarn@latest
 
-# install rbenv & ruby-build
-if ! command -v rbenv &>/dev/null; then
-  curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
-fi
+# # install rbenv & ruby-build
+# if ! command -v rbenv &>/dev/null; then
+#   curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
+# fi
 
 # install pyenv
 if ! command -v pyenv &>/dev/null; then

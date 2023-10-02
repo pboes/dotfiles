@@ -210,6 +210,10 @@ zinit ice wait lucid blockf as"completions" \
   nocompile
 zinit light zdharma-continuum/null
 
+# autojump
+zinit light agkozak/zsh-z
+
+
 # additional completions
 # zinit ice wait lucid blockf as"completion" \
 #   atpull"zinit creinstall -q ."
@@ -226,16 +230,16 @@ zinit ice wait lucid \
 zinit light zsh-users/zsh-syntax-highlighting
 
 # 1Password plugins: https://developer.1password.com/docs/cli/shell-plugins/
-zinit ice wait lucid \
-  id-as"op-plugins" \
-  has"op" \
-  if"[[ -f ~/.config/op/plugins.sh ]]"
-zinit snippet ~/.config/op/plugins.sh
+# zinit ice wait lucid \
+#   id-as"op-plugins" \
+#   has"op" \
+#   if"[[ -f ~/.config/op/plugins.sh ]]"
+# zinit snippet ~/.config/op/plugins.sh
 
 # oh-my-zsh leftovers
 # https://github.com/ohmyzsh/ohmyzsh/tree/master/lib
 zinit snippet OMZ::lib/clipboard.zsh
-zinit snippet OMZ::lib/termsupport.zsh
+# zinit snippet OMZ::lib/termsupport.zsh
 
 # iTerm2 integration
 # shellcheck disable=SC2016

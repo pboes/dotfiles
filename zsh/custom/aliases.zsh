@@ -85,33 +85,33 @@ alias youtube-dl="yt-dlp"  # better youtube-dl fork: https://github.com/yt-dlp/y
 alias ytdl="youtube-dl -f bestvideo+bestaudio"
 alias ytmp3="youtube-dl -f bestaudio -x --audio-format mp3 --audio-quality 320K"
 
-# Hugo: build & install from source as `hugo-dev`
-make_hugo() {
-  if [[ ! -d "$GOPATH"/src/github.com/gohugoio/hugo ]]; then
-    mkdir -p "$GOPATH"/src/github.com/gohugoio/hugo
-    git clone https://github.com/gohugoio/hugo.git "$GOPATH"/src/github.com/gohugoio/hugo
-  fi
+# # Hugo: build & install from source as `hugo-dev`
+# make_hugo() {
+#   if [[ ! -d "$GOPATH"/src/github.com/gohugoio/hugo ]]; then
+#     mkdir -p "$GOPATH"/src/github.com/gohugoio/hugo
+#     git clone https://github.com/gohugoio/hugo.git "$GOPATH"/src/github.com/gohugoio/hugo
+#   fi
 
-  if ! command -v mage &>/dev/null; then
-    go install github.com/magefile/mage@latest
-  fi
+#   if ! command -v mage &>/dev/null; then
+#     go install github.com/magefile/mage@latest
+#   fi
 
-  # parentheses lets us cd to Hugo path without changing our current location
-  (
-    cd "$GOPATH"/src/github.com/gohugoio/hugo \
-    && "$GOPATH"/bin/hugo-dev env 2>/dev/null || true \
-    && git checkout master \
-    && mage uninstall \
-    && git pull origin master \
-    && git reset --hard HEAD \
-    && mage -v hugo \
-    && HUGO_BUILD_TAGS=extended mage -v install \
-    && mv -fv "$GOPATH"/bin/hugo "$GOPATH"/bin/hugo-dev \
-    && "$GOPATH"/bin/hugo-dev env
-  )
-}
-# run `hugo config` first to make sure we're in a Hugo directory:
-alias hugo_clean="hugo config 1>/dev/null && rm -rf public/ resources/ build/"
+#   # parentheses lets us cd to Hugo path without changing our current location
+#   (
+#     cd "$GOPATH"/src/github.com/gohugoio/hugo \
+#     && "$GOPATH"/bin/hugo-dev env 2>/dev/null || true \
+#     && git checkout master \
+#     && mage uninstall \
+#     && git pull origin master \
+#     && git reset --hard HEAD \
+#     && mage -v hugo \
+#     && HUGO_BUILD_TAGS=extended mage -v install \
+#     && mv -fv "$GOPATH"/bin/hugo "$GOPATH"/bin/hugo-dev \
+#     && "$GOPATH"/bin/hugo-dev env
+#   )
+# }
+# # run `hugo config` first to make sure we're in a Hugo directory:
+# alias hugo_clean="hugo config 1>/dev/null && rm -rf public/ resources/ build/"
 
 # misc.
 alias screenfetch="neofetch"

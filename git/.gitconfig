@@ -7,9 +7,9 @@
 	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
 	trustctime = false
 [user]
-	email = jake@jarv.is
-	name = Jake Jarvis
-	signingkey = 3BC6E5776BF379D36F6714802B0C9CF251E69A39
+	email = pvboes@gmail.com
+	name = Paul Boes
+	signingkey = 9D30445E4BF7E917
 [init]
 	defaultBranch = main
 [push]
@@ -44,7 +44,7 @@
 # [gpg]
 # 	program = /usr/local/MacGPG2/bin/gpg
 [github]
-	user = jakejarvis
+	user = pboes
 [hub]
 	host = github.com
 [filter "lfs"]

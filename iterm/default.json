@@ -1,6 +1,6 @@
 {
   "ASCII Ligatures" : true,
-  "Working Directory" : "\/Users\/jake",
+  "Working Directory" : "\/Users\/paulboes",
   "Prompt Before Closing 2" : false,
   "Selected Text Color" : {
     "Red Component" : 0,
@@ -57,7 +57,7 @@
     "telnet"
   ],
   "Scrollback Lines" : 0,
-  "Draw Powerline Glyphs" : false,
+  "Draw Powerline Glyphs" : true,
   "Status Bar Layout" : {
     "components" : [
       {

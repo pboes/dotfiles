@@ -54,8 +54,12 @@ export HISTFILE="${HISTFILE:-$HOME/.zsh_history}"
 export HISTSIZE=10000
 export SAVEHIST=10000
 
-export EDITOR="nano"  # don't judge me
+export EDITOR="vim" 
 export VISUAL="code"
+
+# --- THE FUCK
+
+eval $(thefuck --alias)
 
 # https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/theme-and-appearance.zsh#L5
 # export LS_COLORS="Gxfxcxdxbxegedabagacad"
