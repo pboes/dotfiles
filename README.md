@@ -3,7 +3,7 @@
 THINGS TO UPDATE:
 - Export your own iTerm config
 - Find a way to add the hot corner and keyboard changes you've made
-- You're currently also taking your vim/nvim config from https://daler.github.io/dotfiles/starthere.html (although it's not a great setup experience tbh)
+- You're currently also taking your vim/nvim config from https://github.com/amix/vimrc, with an additional iremap jk <Esc>. Maybe bring the installation of your version in automatically.
 
 
 ![iTerm screenshot](misc/screenshot.png)
