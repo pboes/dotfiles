@@ -97,6 +97,7 @@ cask "dropbox"
 cask "the-unarchiver"
 cask "iterm2"
 cask "visual-studio-code"
+casl "solvespace"
 
 # cask "thingsmacsandboxhelper" # not found
 
