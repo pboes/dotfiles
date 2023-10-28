@@ -9,15 +9,16 @@
 [user]
 	email = pvboes@gmail.com
 	name = Paul Boes
+	signingkey = 3F72737A637F0B77
 [init]
 	defaultBranch = main
 [push]
 	default = tracking
-	gpgSign = false
+	gpgSign = if-asked
 [pull]
 	rebase = true
 [commit]
-	gpgsign = false
+	gpgsign = true
 [rebase]
 	autoSquash = true
 	autoStash = true
@@ -40,8 +41,8 @@
 	new = !git init && git symbolic-ref HEAD refs/heads/main
 [credential]
 	helper = osxkeychain
-# [gpg]
-# 	program = /usr/local/MacGPG2/bin/gpg
+[gpg]
+	program = /usr/local/MacGPG2/bin/gpg
 [github]
 	user = pboes
 [hub]
