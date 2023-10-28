@@ -86,6 +86,9 @@ brew "pyenv" unless OS.linux?
 brew "rustup"
 brew "mackup"
 
+# Clipboard manager
+brew "maccy"
+
 
 ###############################
 #  macOS Apps via Cask        #
@@ -97,7 +100,7 @@ cask "dropbox"
 cask "the-unarchiver"
 cask "iterm2"
 cask "visual-studio-code"
-casl "solvespace"
+cask "solvespace"
 
 # cask "thingsmacsandboxhelper" # not found
 
