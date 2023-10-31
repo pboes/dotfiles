@@ -42,6 +42,9 @@ sudo systemsetup -settimezone "Europe/Berlin" >/dev/null
 # Disable audio feedback when volume is changed
 defaults write com.apple.sound.beep.feedback -bool false
 
+# Disable sound effects when taking screenshofts
+defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0
+
 # Menu bar: show battery percentage
 defaults write com.apple.menuextra.battery ShowPercent "YES"
 
