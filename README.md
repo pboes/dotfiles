@@ -1,9 +1,8 @@
 # 💻 My .files
 
-THINGS TO UPDATE:
-- Export your own iTerm config
-- Find a way to add the hot corner and keyboard changes you've made
-- You're currently also taking your vim/nvim config from https://github.com/amix/vimrc, with an additional iremap jk <Esc>. Maybe bring the installation of your version in automatically.
+## Changes from the forked repo
+- Some differences in Brewfile, iterm preferences, font, etc.
+- Using https://github.com/amix/vimrc, with an additional inoremap kj  <Esc>
 - FInally, to set up GPG, you're installing the GPG suite (installing gpg2),  also look at the Gist you forked for setting up pinentry,
 
 
