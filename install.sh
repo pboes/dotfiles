@@ -70,6 +70,11 @@ else
   echo "I don't recognize this OS... skipping extra steps."
 fi
 
+#### CHANGE: Here overwriting the vim configuration
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_awesome_vimrc.sh
+touch ~/.vim_runtime/my_configs.vim && echo "inoremap kj <esc>" >> ~/.vim_runtime/my_configs.vim
+
 # wow
 echo ""
 echo "🎉 It actually worked!"
