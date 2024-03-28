@@ -115,4 +115,5 @@ alias ytmp3="youtube-dl -f bestaudio -x --audio-format mp3 --audio-quality 320K"
 
 # misc.
 alias screenfetch="neofetch"
-alias weather="curl 'https://wttr.in/?format=v2'"
+# removed the weather alias in favour of a function (see functions.zsh)
+# alias weather="curl 'https://wttr.in/?format=v2'"
