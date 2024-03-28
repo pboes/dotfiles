@@ -84,3 +84,6 @@ push_ssh_cert() {
     ssh "$_host" "\cat >> ~/.ssh/authorized_keys" < ~/.ssh/id_ed25519.pub
   done
 }
+
+# function to display weather
+weather() {curl "https://wttr.in/'$1'?format=v2"}
