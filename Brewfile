@@ -107,6 +107,9 @@ cask "solvespace"
 # Virtual Machines (& Docker)
 cask "docker"
 
+# Julialang
+cask "julia"
+
 # Media
 cask "spotify"
 cask "notion"
