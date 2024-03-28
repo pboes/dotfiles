@@ -86,4 +86,6 @@ push_ssh_cert() {
 }
 
 # function to display weather
-weather() {curl "https://wttr.in/'$1'?format=v2"}
+weather() {
+  curl "https://wttr.in/'$1'?format=v2"
+}
