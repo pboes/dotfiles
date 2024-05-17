@@ -258,3 +258,6 @@ zinit ice from"gh-r" as"command" \
   atpull"%atclone" \
   src"init.zsh"
 zinit light starship/starship
+
+zinit ice depth=1
+zinit light jeffreytse/zsh-vi-mode

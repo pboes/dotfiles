@@ -24,3 +24,13 @@ fi
 # bun
 export BUN_INSTALL="$HOME/Library/Application Support/reflex/bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Created by `pipx` on 2024-03-15 22:04:42
+export PATH="$PATH:/Users/paulboes/.local/bin"
+
+# Add MariaDB path
+export PATH="/usr/local/Cellar/mariadb@10.6/10.6.17/bin:$PATH"
