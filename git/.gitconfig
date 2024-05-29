@@ -41,6 +41,8 @@
 	new = !git init && git symbolic-ref HEAD refs/heads/main
 [credential]
 	helper = osxkeychain
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
 [gpg]
 	program = /usr/local/MacGPG2/bin/gpg
 [github]
@@ -64,3 +66,5 @@
 	hunk-header-style = omit
 	line-numbers = true
 	syntax-theme = base16
+[credential "https://dev.azure.com"]
+	useHttpPath = true

@@ -77,6 +77,7 @@ brew "wget"  #, args: ["with-iri"]
 brew "git"
 brew "git-lfs"
 brew "gh"
+cask git-credential-manager
 
 # Mostly ordinary binaries
 brew "mas" if OS.mac?
