@@ -129,22 +129,24 @@ cask "google-chrome"
 #  Fonts                      #
 ###############################
 
+cask font-fira-code-nerd-font
+
 # Monospace
-cask "homebrew/cask-fonts/font-cascadia-code"
-cask "homebrew/cask-fonts/font-hack"
-cask "homebrew/cask-fonts/font-ibm-plex-mono"
-cask "homebrew/cask-fonts/font-roboto-mono"
-cask "homebrew/cask-fonts/font-sf-mono"
-cask "homebrew/cask-fonts/font-sf-mono-for-powerline"
-cask "homebrew/cask-fonts/font-source-code-pro"
+#cask "homebrew/cask-fonts/font-cascadia-code"
+#cask "homebrew/cask-fonts/font-hack"
+#cask "homebrew/cask-fonts/font-ibm-plex-mono"
+#cask "homebrew/cask-fonts/font-roboto-mono"
+#cask "homebrew/cask-fonts/font-sf-mono"
+#cask "homebrew/cask-fonts/font-sf-mono-for-powerline"
+#cask "homebrew/cask-fonts/font-source-code-pro"
 
 # Sans/Serif
-cask "homebrew/cask-fonts/font-comic-neue"
-cask "homebrew/cask-fonts/font-inter"
-cask "homebrew/cask-fonts/font-open-sans"
-cask "homebrew/cask-fonts/font-roboto"
-cask "homebrew/cask-fonts/font-sf-compact"
-cask "homebrew/cask-fonts/font-sf-pro"
+#cask "homebrew/cask-fonts/font-comic-neue"
+#cask "homebrew/cask-fonts/font-inter"
+#cask "homebrew/cask-fonts/font-open-sans"
+#cask "homebrew/cask-fonts/font-roboto"
+#cask "homebrew/cask-fonts/font-sf-compact"
+#cask "homebrew/cask-fonts/font-sf-pro"
 
 ###############################
 #  macOS Apps via App Store   #

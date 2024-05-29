@@ -18,7 +18,7 @@
 [pull]
 	rebase = true
 [commit]
-	gpgsign = true
+	gpgsign = false #true
 [rebase]
 	autoSquash = true
 	autoStash = true
