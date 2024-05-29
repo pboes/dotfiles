@@ -34,3 +34,4 @@ export PATH="$PATH:/Users/paulboes/.local/bin"
 
 # Add MariaDB path
 export PATH="/usr/local/Cellar/mariadb@10.6/10.6.17/bin:$PATH"
+export GPG_TTY=/dev/ttys000
